@@ -1,0 +1,53 @@
+* {
+    font-family: Libre Baskerville,Georgia,Times,Times New Roman,serif;
+    color: #383838;
+    margin:0%;
+}
+
+a, a:visited{
+    color: black;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: blue;
+}
+
+h1{
+    text-rendering: optimizeLegibility;
+    font-weight: 700;
+}
+
+.article-date{
+    font-family: Helvetica, Neue, sans-serif;
+}
+
+.main-image-subtitle{
+
+}
+
+.attribution{
+    color: #ccc;
+}
+
+p{
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+
+.main-content{
+    display: block;
+    margin: auto;
+    width: 600px;
+}
+
+content-img{
+    max-width: 100%;
+}
+
+footer, footer a{
+    background-color: #202020;
+    color: white;
+    margin: auto;
+
+}
