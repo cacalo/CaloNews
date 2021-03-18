@@ -47,7 +47,7 @@ p{
 }
 
 .article-date{
-    font-family: Helvetica, Neue, sans-serif;
+    font-family: Nimbus Sans, sans-serif;
     background-color: #fff;
     display: inline;
     margin: 0%;
@@ -68,7 +68,7 @@ p{
 }
 
 figcaption, .caption{
-    font-family: Helvetica, Neue, sans-serif;
+    font-family: Nimbus Sans, sans-serif;
     color: #555768;
     line-height: 18px;
     font-size: 11px;
@@ -79,7 +79,7 @@ figcaption, .caption{
 }
 
 .attribution{
-    font-family: Helvetica, Neue, sans-serif;
+    font-family: Nimbus Sans, sans-serif;
     color: #ccc;
 }
 
@@ -101,9 +101,49 @@ figcaption, .caption{
     margin:0%;
 }
 
+.sidebar-left{
+    margin-left: 8%;
+    float: left;
+    color: #555768;
+}
+.sidebar-left li{
+    list-style-type: none;
+    padding-bottom: 10px;
+    font-family: Nimbus Sans,sans-serif;
+    line-height: 18px;
+    font-size: 11px;
+}
+.sidebar-left li a{
+    text-decoration:none;
+}
+
+.sidebar-left li img{
+    max-height: 15px;
+}
+
+.sidebar-left ol:hover{
+    float: left;
+    text-decoration: none;
+    color: #101114;
+    ;
+}
+
+.sidebar-right{
+    float: right;
+}
+
 footer, footer a{
     background-color: #202020;
     color: white;
     margin: auto;
 
 }
+
+@font-face {
+    font-family: 'Nimbus Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(fonts/Nimbus-Sans-D-OT-Ultra-Light_32757.ttf) format('ttf');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
