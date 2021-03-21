@@ -47,7 +47,7 @@ p{
 }
 
 .article-date{
-    font-family: Nimbus Sans, sans-serif;
+    font-family: PT Sans, sans-serif;
     background-color: #fff;
     display: inline;
     margin: 0%;
@@ -68,21 +68,32 @@ p{
 }
 
 figcaption, .caption{
-    font-family: Nimbus Sans, sans-serif;
+    font-family: PT Sans, sans-serif;
     color: #555768;
     line-height: 18px;
     font-size: 11px;
-    margin-bottom: 24px;
     padding-left: 20%;
     left: 20%;
 
 }
 
 .attribution{
-    font-family: Nimbus Sans, sans-serif;
+    font-family: PT Sans, sans-serif;
     color: #ccc;
 }
 
+blockquote{
+    border-left: 8px solid #afb2ba;
+    font-style: normal;
+    font-weight: 700;
+    clear: both;
+    padding: 9px 18px 12px;
+    margin-bottom: 18px;
+    color: #484848;
+    line-height: 1.6;
+    font-size: 18px;
+
+}
 
 
 .main-content{
@@ -94,7 +105,7 @@ figcaption, .caption{
 .content-img{
     max-width:100%;
     object-fit:scale-down;
-    /*display: block;*/
+    display: block;
 }
 
 .no-margin{
@@ -105,11 +116,12 @@ figcaption, .caption{
     margin-left: 8%;
     float: left;
     color: #555768;
+    font-family: "PT Sans",sans-serif;
 }
 .sidebar-left li{
     list-style-type: none;
     padding-bottom: 10px;
-    font-family: Nimbus Sans,sans-serif;
+    font-family: "PT Sans",sans-serif;
     line-height: 18px;
     font-size: 11px;
 }
@@ -136,13 +148,26 @@ footer, footer a{
     background-color: #202020;
     color: white;
     margin: auto;
+    width: 58%;
 
+}
+
+.three-column{
+    padding-top: 24px;
 }
 
 .four-column{
     float: left;
-    width: 25%;
+    width: 20%;
     box-sizing: border-box;
+    line-height: 1.7;
+}
+.four-column ul{
+    padding: 0%;
+}
+.four-column img{
+    max-height: 50px;
+    float: right ;
 }
 
 .clr{
@@ -150,13 +175,22 @@ footer, footer a{
 }
 
 .pre-footer{
-    background-color: #383838;
     color: #fff;
-    margin:auto;
+    margin: auto;
+    width: 58%;
+}
+
+.pre-footer-container{
+    background-color: #383838;
+    padding: 20px 0px;
 }
 .pre-footer a{
     color: #fff;
     list-style-type: none;
+    text-decoration: none;
+}
+.pre-footer a:hover{
+    border-bottom: 1px solid #fff;
 }
 
 .copyright{
@@ -168,16 +202,59 @@ footer a{
     margin-right: 1em;
     font-weight: 400;
 }
-footer a:hover{
+footer a:hover, footer a:visited{
     border-bottom: 1px solid #d6d6da;
     color: #d6d6da
 }
 
-@font-face {
-    font-family: 'Nimbus Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://github.com/cacalo/CaloNews/blob/main/fonts/Nimbus-Sans-D-OT-Ultra-Light_32757.ttf) format('ttf');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
+footer nav{
+    display: inline;
+    font-family:'PT Sans', sans-serif;
+}
+
+.footer-wrapper{
+    background-color: #202020;
+}
+
+.tags-container{
+    list-style: none;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.tags-container::after{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: ".";
+    clear: both;
+    height: 0;
+}
+
+.tag{
+    font-family:'PT Sans', sans-serif;
+    background-color: #eee;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    color: #555;
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    margin: 0 6px 6px 0;
+    padding: 0 6px;
+    text-decoration: none;
+    white-space: nowrap;
+    list-style: none;
+    float: left;
+}
+
+.tag-icon{
+    float: left;
+    max-width: 22px;
+    5px
+}
+
+.tag:hover, .tag a:hover{
+    background-color: #d8352a;
+    color: #fff;
+}
